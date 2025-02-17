@@ -1,11 +1,19 @@
 # simplify-step-by-step
-following information is used for learning about *simplify-step-by-step* project
+This repository is used to reproduce the experimental results of
+_**Let’s Simplify Step by Step: Guiding LLM Towards Multilingual Zero-shot Readability-Controlled Sentence Simplification**_, 
+and meanwhile, it supplements the details that are not described clearly in the paper. I hope it can help and inspire you.
 
-### project structure
+## 1. project structure
 ```
 simplify-step-by-step
-├─ data  # storing raw data which labeled cefr-level. 
-├─ img  # visual autto-evaluation metric comparison
+├─ data  # storing raw data which includes at least two columns named "Rating" and "Sentence". 
+│  ├─ ar
+│  ├─ en   # include CEFR-SP_partial
+│  ├─ fr
+│  ├─ hi
+│  ├─ ru
+│  ├─ prompt_expert  # Semantic prompt used in paper
+├─ img   # visual auto-evaluation metric (Acc, RMSE) comparison between one-step LLM and our DP-planner+CoT
 │  ├─ CEFR-SP
 │  └─ README
 │     ├─ ar
@@ -23,9 +31,9 @@ simplify-step-by-step
 │  │     ├─ fr
 │  │     ├─ hi
 │  │     └─ ru
-│  ├─ experiment_analysis.ipynb  # analysis llm generation
+│  ├─ experiment_analysis.ipynb  # analysis llm generation, which mainly includes calculating ρ, adj_acc, exa_acc and rmse. 
 │  ├─ cefr_estimator_choose.ipynb  # choosing optimal cefr-estimator for CEFR-SP corpus
-│  ├─ llm_infer_few-shot_cefrsp_dpagent_expert.py  # llm inference codes using agent policy and expert guided prompt
+│  ├─ llm_infer_zero-shot_dp-planner_CoT.py  # llm inference codes using policy planned by dp and CoT generation using semantic-aware exemplar selection
 │  ├─ utils.py  # prompt description and dp-algorithm
 ```
 
