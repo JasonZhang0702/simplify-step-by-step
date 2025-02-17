@@ -23,11 +23,11 @@ def agent_policy(nodes, profit_matrix, start_node, end_node):
 
     dp[start_idx] = 0.0  #
 
-    for i in range(n):
-        for j in range(i+1, n):  #
-            if profit_matrix[i][j] != 0 and dp[i] != float('-inf'):  #
+    for i in range(n):  # finding reward_highest path for simplification using DP
+        for j in range(i+1, n):
+            if profit_matrix[i][j] != 0 and dp[i] != float('-inf'):
                 new_profit = dp[i] + profit_matrix[i][j]
-                if new_profit > dp[j]:  #
+                if new_profit > dp[j]:
                     dp[j] = new_profit
                     path[j] = i
 
@@ -39,4 +39,6 @@ def agent_policy(nodes, profit_matrix, start_node, end_node):
     result_path.reverse()
 
     return dp[end_idx], result_path
+
+
 
