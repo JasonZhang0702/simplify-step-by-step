@@ -111,19 +111,45 @@ simplify-step-by-step
 │  │     ├─ fr
 │  │     ├─ hi
 │  │     └─ ru
+│  ├─ eval.py  # calculating seven metrics reported in paper
 │  ├─ experiment_analysis.ipynb  # analysis llm generation, which mainly includes calculating ρ, adj_acc, exa_acc and rmse. 
 │  ├─ cefr_estimator_choose.ipynb  # choosing optimal cefr-estimator for CEFR-SP corpus
 │  ├─ llm_infer_zero-shot_dp-planner_CoT.py  # llm inference codes using policy planned by dp and CoT generation using semantic-aware exemplar selection
-│  ├─ utils.py  # prompt description and dp-algorithm
+│  ├─ utils.py  # prompt description, dp-algorithm and other function code 
 ```
+### Note: Newsela-Auto Portion in CEFR-SP
+> Regarding the access permission, the Newsela annotated in CEFR-SP cannot be made publicly available. 
+> - You should first obtain access of Newsela dataset (you can request an access [here](https://newsela.com/data/)). 
+> - Please then contact the author of [CEFR-Based Sentence-Difficulty Annotation and Assessment](https://aclanthology.org/2022.emnlp-main.416/) for the Newsela-Auto portion of CEFR-SP with a certificate of your being granted Newsela-Auto access attached (a copy of e-mail communication with a Newsela contact person should be sufficient).
 
 ## 2. Run Inference using DP-planner+CoT generation
 ```python
 python src/llm_infer_zero-shot_dp-planner_CoT.py --infer_bs 5 --case_num 3 --model_name /path/to/Llama-3.1-8B-Instruct --save_dir zero-shot_cefrsp --corpus CEFR-SP
 ```
-The sentences simplified by the LLM will be saved in [LLMGeneration](src%2FLLMGeneration). Among them, `llm_gene_CEFR1, llm_gene_CEFR2 and llm_gene_CEFR3` represent the generations specified for the `A1, A2 and B1` CEFR-levels. 
+Note: The sentences simplified by the LLM will be saved in `src/LLMGeneration`. Among them, `llm_gene_CEFR1, llm_gene_CEFR2 and llm_gene_CEFR3` represent the generations specified for the `A1, A2 and B1` CEFR-levels. 
 
 
 ## 3. Auto-Evaluation
+```python
+python src/eval.py --file_path LLMGeneration/CEFR-SP/en_few-shot_29.csv --lang en --STS_model all-MiniLM-L6-v2 --BS_model roberta-large --cola roberta-large-cola-krishna2020
+```
+Note: As for using CEFR-SP predictor to assess CEFR-level, we utilize the script in _CEFR-Based Sentence-Difficulty Annotation and Assessment_. [🔗Link](https://github.com/yukiar/CEFR-SP)
+
+Download links and references of the estimator model checkpoints used in the paper are listed as follows: 
+
+| 🖊Model               | 🔗Link                                         | 📚Reference                      |
+|-----------------------|------------------------------------------------|----------------------------------|
+| CEFR-SP               | https://zenodo.org/records/7234096             | https://arxiv.org/abs/2210.11766 |
+| README_English        | https://huggingface.co/tareknaous/readabert-en | https://arxiv.org/abs/2305.14463 |
+| README_Arabic         | https://huggingface.co/tareknaous/readabert-ar | https://arxiv.org/abs/2305.14463 |
+| README_Hindi          | https://huggingface.co/tareknaous/readabert-hi | https://arxiv.org/abs/2305.14463 |
+| README_French         | https://huggingface.co/tareknaous/readabert-fr | https://arxiv.org/abs/2305.14463 |
+| README_Russian        | https://huggingface.co/tareknaous/readabert-ru | https://arxiv.org/abs/2305.14463 |
+| STS_English           | https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2                                            | https://arxiv.org/abs/1908.10084                              |
+| STS_non-English       | https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2                                            | https://arxiv.org/abs/1908.10084                              |
+| BertScore_English     | https://huggingface.co/FacebookAI/roberta-large                                            | http://arxiv.org/abs/1907.11692                              |
+| BertScore_non-English | https://huggingface.co/FacebookAI/xlm-roberta-large                                            | http://arxiv.org/abs/1911.02116                              |
+| Cola_English          | https://drive.google.com/drive/folders/12ImHH2kJKw1Vs3rDUSRytP3DZYcHdsZw                                            | https://arxiv.org/abs/2010.05700                              |
+
 
 

@@ -1,3 +1,5 @@
+import numpy as np
+
 CEFR_Descriptors = {
     1: "Can understand very short, simple texts a single phrase at a time, picking up familiar names, words and basic phrases and rereading as required.",
     2: "Can understand short, simple texts containing the highest frequency vocabulary, including a proportion of shared international vocabulary items.",
@@ -39,4 +41,27 @@ def agent_policy(nodes, profit_matrix, start_node, end_node):
     return dp[end_idx], result_path  # return highest reward adn responding path
 
 
+def exact_accuracy(true_labels, pred_labels):
+    success_count = 0
+    for true, pred in zip(true_labels, pred_labels):
+        if true == pred:
+            success_count += 1
+    accuracy = success_count / len(true_labels)
+    return accuracy
 
+
+def calculate_rmse(true_labels, pred_labels):
+    true_labels = np.array(true_labels)
+    pred_labels = np.array(pred_labels)
+    mse = np.mean((true_labels - pred_labels) ** 2)
+    rmse = np.sqrt(mse)
+    return rmse
+
+
+def adjacency_accuracy(true_labels, pred_labels):
+    success_count = 0
+    for true, pred in zip(true_labels, pred_labels):
+        if abs(true - pred) <= 1:
+            success_count += 1
+    accuracy = success_count / len(true_labels)
+    return accuracy
