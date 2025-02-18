@@ -17,6 +17,7 @@ and meanwhile, it supplements the details that are not described clearly in the 
 > - The following are the heatmap displays of our model and the one-step LLM in terms of three metrics, namely _Adjacent Accuracy_, _Exact Accuracy_, and _RMSE_, on two benchmarks, CEFR-SP and README.  
 > - We achieve up to 26\% improvement in adjacent accuracy while maintaining semantic fidelity. 
 
+
 <style>
     .image-container {
         display: flex;
@@ -31,6 +32,8 @@ and meanwhile, it supplements the details that are not described clearly in the 
         padding: 2px;  
     }
 </style>
+
+
 - _**CEFR-SP_Partial**_
 <div class="image-container">
     <img src="img/CEFR-SP/CEFR-SP_Partial_dp-cot_adjacc.jpg" alt="">
