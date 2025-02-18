@@ -35,6 +35,18 @@ and meanwhile, it supplements the details that are not described clearly in the 
 
 
 - _**CEFR-SP_Partial**_
+<div style="display: flex; flex-wrap: wrap;">
+  <div style="width: 33.33%; box-sizing: border-box; padding: 2px;">
+    <img src="img/CEFR-SP/CEFR-SP_Partial_dp-cot_adjacc.jpg" alt="Image 1" style="width: 100%; height: auto; display: block;">
+  </div>
+  <div style="width: 33.33%; box-sizing: border-box; padding: 2px;">
+    <img src="img/CEFR-SP/CEFR-SP_Partial_dp-cot_exaacc.jpg" alt="Image 2" style="width: 100%; height: auto; display: block;">
+  </div>
+  <div style="width: 33.33%; box-sizing: border-box; padding: 2px;">
+    <img src="img/CEFR-SP/CEFR-SP_Partial_dp-cot_rmse.jpg" alt="Image 3" style="width: 100%; height: auto; display: block;">
+  </div>
+</div>
+
 <div class="image-container">
     <img src="img/CEFR-SP/CEFR-SP_Partial_dp-cot_adjacc.jpg" alt="">
     <img src="img/CEFR-SP/CEFR-SP_Partial_dp-cot_exaacc.jpg" alt="">
