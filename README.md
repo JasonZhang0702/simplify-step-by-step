@@ -132,6 +132,7 @@ and meanwhile, it supplements the details that are not described clearly in the 
 </table>
 
 <h2 id="project-structure">1. Project Structure</h2>
+
 ```
 simplify-step-by-step
 ├─ data  # storing raw data which includes at least two columns named "Rating" and "Sentence". 
@@ -166,11 +167,13 @@ simplify-step-by-step
 │  ├─ utils.py  # prompt description, dp-algorithm and other function code 
 ```
 ### Note: Newsela-Auto Portion in CEFR-SP
+
 > Regarding the access permission, the Newsela annotated in CEFR-SP cannot be made publicly available. 
 > - You should first obtain access of Newsela dataset (you can request an access [here](https://newsela.com/data/)). 
 > - Please then contact the author of [CEFR-Based Sentence-Difficulty Annotation and Assessment](https://aclanthology.org/2022.emnlp-main.416/) for the Newsela-Auto portion of CEFR-SP with a certificate of your being granted Newsela-Auto access attached (a copy of e-mail communication with a Newsela contact person should be sufficient).
 
 <h2 id="run-infer">2. Run Inference using DP-planner+CoT generation</h2>
+
 ```python
 python src/llm_infer_zero-shot_dp-planner_CoT.py --infer_bs 5 --case_num 3 --model_name /path/to/Llama-3.1-8B-Instruct --save_dir zero-shot_cefrsp --corpus CEFR-SP
 ```
@@ -178,6 +181,7 @@ Note: The sentences simplified by the LLM will be saved in `src/LLMGeneration`. 
 
 
 <h2 id="auto-eval">3. Auto Evaluation</h2>
+
 ```python
 python src/eval.py --file_path LLMGeneration/CEFR-SP/en_few-shot_29.csv --lang en --STS_model all-MiniLM-L6-v2 --BS_model roberta-large --cola roberta-large-cola-krishna2020
 ```
