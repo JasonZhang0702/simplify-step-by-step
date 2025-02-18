@@ -116,9 +116,14 @@ simplify-step-by-step
 │  ├─ llm_infer_zero-shot_dp-planner_CoT.py  # llm inference codes using policy planned by dp and CoT generation using semantic-aware exemplar selection
 │  ├─ utils.py  # prompt description and dp-algorithm
 ```
+
 ## 2. Run Inference using DP-planner+CoT generation
 ```python
 python src/llm_infer_zero-shot_dp-planner_CoT.py --infer_bs 5 --case_num 3 --model_name /path/to/Llama-3.1-8B-Instruct --save_dir zero-shot_cefrsp --corpus CEFR-SP
 ```
+The sentences simplified by the LLM will be saved in [LLMGeneration](src%2FLLMGeneration). Among them, `llm_gene_CEFR1, llm_gene_CEFR2 and llm_gene_CEFR3` represent the generations specified for the `A1, A2 and B1` CEFR-levels. 
+
+
+## 3. Auto-Evaluation
 
 
