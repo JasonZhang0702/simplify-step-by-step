@@ -37,65 +37,107 @@ and meanwhile, it supplements the details that are not described clearly in the 
 - _**CEFR-SP_Partial**_
 <table style="width: 100%; border-collapse: collapse;">
   <tr>
-    <td style="padding: 2px; width: 33.33%;">
+    <td style="padding: 1px; width: 33.33%;">
       <img src="img/CEFR-SP/CEFR-SP_Partial_dp-cot_adjacc.jpg" alt="" style="width: 100%; height: auto; display: block;">
     </td>
-    <td style="padding: 2px; width: 33.33%;">
+    <td style="padding: 1px; width: 33.33%;">
       <img src="img/CEFR-SP/CEFR-SP_Partial_dp-cot_exaacc.jpg" alt="" style="width: 100%; height: auto; display: block;">
     </td>
-    <td style="padding: 2px; width: 33.33%;">
+    <td style="padding: 1px; width: 33.33%;">
       <img src="img/CEFR-SP/CEFR-SP_Partial_dp-cot_rmse.jpg" alt="" style="width: 100%; height: auto; display: block;">
     </td>
   </tr>
 </table>
 
-<div class="image-container">
-    <img src="img/CEFR-SP/CEFR-SP_Partial_dp-cot_adjacc.jpg" alt="">
-    <img src="img/CEFR-SP/CEFR-SP_Partial_dp-cot_exaacc.jpg" alt="">
-    <img src="img/CEFR-SP/CEFR-SP_Partial_dp-cot_rmse.jpg" alt="">
-</div>
-
 - _**CEFR-SP_Whole**_
-<div class="image-container">
-    <img src="img/CEFR-SP/CEFR-SP_Whole_dp-cot_adjacc.jpg" alt="">
-    <img src="img/CEFR-SP/CEFR-SP_Whole_dp-cot_exaacc.jpg" alt="">
-    <img src="img/CEFR-SP/CEFR-SP_Whole_dp-cot_rmse.jpg" alt="">
-</div>
+<table style="width: 100%; border-collapse: collapse;">
+  <tr>
+    <td style="padding: 1px; width: 33.33%;">
+      <img src="img/CEFR-SP/CEFR-SP_Whole_dp-cot_adjacc.jpg" alt="" style="width: 100%; height: auto; display: block;">
+    </td>
+    <td style="padding: 1px; width: 33.33%;">
+      <img src="img/CEFR-SP/CEFR-SP_Whole_dp-cot_exaacc.jpg" alt="" style="width: 100%; height: auto; display: block;">
+    </td>
+    <td style="padding: 1px; width: 33.33%;">
+      <img src="img/CEFR-SP/CEFR-SP_Whole_dp-cot_rmse.jpg" alt="" style="width: 100%; height: auto; display: block;">
+    </td>
+  </tr>
+</table>
 
 - _**README_Arabic**_
-<div class="image-container">
-    <img src="img/README/ar/README-ar_dp-cot_adjacc.jpg" alt="">
-    <img src="img/README/ar/README-ar_dp-cot_exaacc.jpg" alt="">
-    <img src="img/README/ar/README-ar_dp-cot_rmse.jpg" alt="">
-</div>
+<table style="width: 100%; border-collapse: collapse;">
+  <tr>
+    <td style="padding: 1px; width: 33.33%;">
+      <img src="img/README/ar/README-ar_dp-cot_adjacc.jpg" alt="" style="width: 100%; height: auto; display: block;">
+    </td>
+    <td style="padding: 1px; width: 33.33%;">
+      <img src="img/README/ar/README-ar_dp-cot_exaacc.jpg" alt="" style="width: 100%; height: auto; display: block;">
+    </td>
+    <td style="padding: 1px; width: 33.33%;">
+      <img src="img/README/ar/README-ar_dp-cot_rmse.jpg" alt="" style="width: 100%; height: auto; display: block;">
+    </td>
+  </tr>
+</table>
 
 - _**README_English**_
-<div class="image-container">
-    <img src="img/README/en/README-en_dp-cot_adjacc.jpg" alt="">
-    <img src="img/README/en/README-en_dp-cot_exaacc.jpg" alt="">
-    <img src="img/README/en/README-en_dp-cot_rmse.jpg" alt="">
-</div>
+<table style="width: 100%; border-collapse: collapse;">
+  <tr>
+    <td style="padding: 1px; width: 33.33%;">
+      <img src="img/README/en/README-en_dp-cot_adjacc.jpg" alt="" style="width: 100%; height: auto; display: block;">
+    </td>
+    <td style="padding: 1px; width: 33.33%;">
+      <img src="img/README/en/README-en_dp-cot_exaacc.jpg" alt="" style="width: 100%; height: auto; display: block;">
+    </td>
+    <td style="padding: 1px; width: 33.33%;">
+      <img src="img/README/en/README-en_dp-cot_rmse.jpg" alt="" style="width: 100%; height: auto; display: block;">
+    </td>
+  </tr>
+</table>
 
 - _**README_French**_
-<div class="image-container">
-    <img src="img/README/fr/README-fr_dp-cot_adjacc.jpg" alt="">
-    <img src="img/README/fr/README-fr_dp-cot_exaacc.jpg" alt="">
-    <img src="img/README/fr/README-fr_dp-cot_rmse.jpg" alt="">
-</div>
+<table style="width: 100%; border-collapse: collapse;">
+  <tr>
+    <td style="padding: 1px; width: 33.33%;">
+      <img src="img/README/fr/README-fr_dp-cot_adjacc.jpg" alt="" style="width: 100%; height: auto; display: block;">
+    </td>
+    <td style="padding: 1px; width: 33.33%;">
+      <img src="img/README/fr/README-fr_dp-cot_exaacc.jpg" alt="" style="width: 100%; height: auto; display: block;">
+    </td>
+    <td style="padding: 1px; width: 33.33%;">
+      <img src="img/README/fr/README-fr_dp-cot_rmse.jpg" alt="" style="width: 100%; height: auto; display: block;">
+    </td>
+  </tr>
+</table>
 
 - _**README_Hindi**_
-<div class="image-container">
-    <img src="img/README/hi/README-hi_dp-cot_adjacc.jpg" alt="">
-    <img src="img/README/hi/README-hi_dp-cot_exaacc.jpg" alt="">
-    <img src="img/README/hi/README-hi_dp-cot_rmse.jpg" alt="">
-</div>
+<table style="width: 100%; border-collapse: collapse;">
+  <tr>
+    <td style="padding: 1px; width: 33.33%;">
+      <img src="img/README/hi/README-hi_dp-cot_adjacc.jpg" alt="" style="width: 100%; height: auto; display: block;">
+    </td>
+    <td style="padding: 1px; width: 33.33%;">
+      <img src="img/README/hi/README-hi_dp-cot_exaacc.jpg" alt="" style="width: 100%; height: auto; display: block;">
+    </td>
+    <td style="padding: 1px; width: 33.33%;">
+      <img src="img/README/hi/README-hi_dp-cot_rmse.jpg" alt="" style="width: 100%; height: auto; display: block;">
+    </td>
+  </tr>
+</table>
 
 - _**README_Russian**_
-<div class="image-container">
-    <img src="img/README/ru/README-ru_dp-cot_adjacc.jpg" alt="">
-    <img src="img/README/ru/README-ru_dp-cot_exaacc.jpg" alt="">
-    <img src="img/README/ru/README-ru_dp-cot_rmse.jpg" alt="">
-</div>
+<table style="width: 100%; border-collapse: collapse;">
+  <tr>
+    <td style="padding: 1px; width: 33.33%;">
+      <img src="img/README/ru/README-ru_dp-cot_adjacc.jpg" alt="" style="width: 100%; height: auto; display: block;">
+    </td>
+    <td style="padding: 1px; width: 33.33%;">
+      <img src="img/README/ru/README-ru_dp-cot_exaacc.jpg" alt="" style="width: 100%; height: auto; display: block;">
+    </td>
+    <td style="padding: 1px; width: 33.33%;">
+      <img src="img/README/ru/README-ru_dp-cot_rmse.jpg" alt="" style="width: 100%; height: auto; display: block;">
+    </td>
+  </tr>
+</table>
 
 ## 1. project structure
 ```
