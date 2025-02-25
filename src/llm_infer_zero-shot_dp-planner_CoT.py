@@ -66,7 +66,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='inference param')
     parser.add_argument('--infer_bs', type=int, default=5)
     parser.add_argument('--case_num', type=int, default=3)
-    parser.add_argument("--model_name", type=str, default="/root/models/Llama-3.1-8B-Instruct")
+    parser.add_argument("--model_name", type=str, default="/root/models/Llama-3-8B-Instruct")
     parser.add_argument("--save_dir", type=str, default="few-shot_cefrsp_28")
     parser.add_argument("--corpus", type=str, default="CEFR-SP", choices=["CEFR-SP", "README", "CEFR-SP_whole"])
     args = parser.parse_args()
