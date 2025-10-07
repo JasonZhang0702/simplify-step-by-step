@@ -1,6 +1,6 @@
-# 👋simplify-step-by-step
+# 👋Readability-Controlled Sentence Simplification
 This repository is used to reproduce the experimental results of
-_**Let’s Simplify Step by Step: Guiding LLM Towards Multilingual Zero-shot Readability-Controlled Sentence Simplification**_, 
+_**Let’s Simplify Step by Step: Guiding LLM Towards Multilingual few-shot Readability-Controlled Sentence Simplification**_, 
 and meanwhile, it supplements the details that are not described clearly in the paper. I hope it can help and inspire you.
 
 ### 💡Research Framework
@@ -202,6 +202,7 @@ Download links and references of the estimator model checkpoints used in the pap
 | BertScore_English     | https://huggingface.co/FacebookAI/roberta-large                                            | http://arxiv.org/abs/1907.11692                              |
 | BertScore_non-English | https://huggingface.co/FacebookAI/xlm-roberta-large                                            | http://arxiv.org/abs/1911.02116                              |
 | Cola_English          | https://drive.google.com/drive/folders/12ImHH2kJKw1Vs3rDUSRytP3DZYcHdsZw                                            | https://arxiv.org/abs/2010.05700                              |
+
 
 
 
