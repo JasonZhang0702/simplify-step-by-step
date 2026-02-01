@@ -1,6 +1,6 @@
 # 👋Readability-Controlled Sentence Simplification
 This repository is used to reproduce the experimental results of
-_**Let’s Simplify Step by Step: Guiding LLM Towards Multilingual few-shot Readability-Controlled Sentence Simplification**_, 
+_**Let’s Simplify Step by Step: Guiding LLM Towards Multilingual Unsupervised Proficiency-Controlled Sentence Simplification**_, 
 and meanwhile, it supplements the details that are not described clearly in the paper. I hope it can help and inspire you.
 
 ### 💡Research Framework
