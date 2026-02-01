@@ -203,5 +203,18 @@ Download links and references of the estimator model checkpoints used in the pap
 | BertScore_non-English | https://huggingface.co/FacebookAI/xlm-roberta-large                                            | http://arxiv.org/abs/1911.02116                              |
 | Cola_English          | https://drive.google.com/drive/folders/12ImHH2kJKw1Vs3rDUSRytP3DZYcHdsZw                                            | https://arxiv.org/abs/2010.05700                              |
 
+## Citation
 
+If you found this repository useful, please consider
+
+```latex
+@inproceedings{
+zhang2025simplifystepbystep,
+title={Let’s Simplify Step by Step: Guiding LLM Towards Multilingual Unsupervised Proficiency-Controlled Sentence Simplification},
+author={Jingshen Zhang and XinYing Qiu and Lifang Lu and Zhuhua Huang and Yutao Hu and Yuechang Wu and JunYu Lu},
+booktitle={The 19th Conference of the European Chapter of the Association for Computational Linguistics},
+year={2026},
+url={https://openreview.net/pdf?id=dxeDcVnsnA}
+}
+```
 
