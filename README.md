@@ -213,8 +213,7 @@ zhang2025simplifystepbystep,
 title={Let’s Simplify Step by Step: Guiding LLM Towards Multilingual Unsupervised Proficiency-Controlled Sentence Simplification},
 author={Jingshen Zhang and XinYing Qiu and Lifang Lu and Zhuhua Huang and Yutao Hu and Yuechang Wu and JunYu Lu},
 booktitle={The 19th Conference of the European Chapter of the Association for Computational Linguistics},
-year={2026},
-url={https://openreview.net/pdf?id=dxeDcVnsnA}
+year={2026}
 }
 ```
 
